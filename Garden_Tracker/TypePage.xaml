@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Garden_Tracker.TypePage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView  x:Name="lvTypes" SelectionMode="Single" ItemTapped="lvTypes_ItemSelected"/>
+            <Label Text="Add a new type to the list" VerticalOptions="End" HorizontalOptions="Center" TextColor="White" FontSize="14"/>
+            <Button Text="Add" Clicked="Add_Clicked" 
+                    WidthRequest="20" 
+                    Margin="20" 
+                    HeightRequest="60" 
+                    BackgroundColor="Gold" 
+                    CornerRadius="12" 
+                    TextColor="Black" 
+                    FontSize="18" 
+                    FontAttributes="Bold"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

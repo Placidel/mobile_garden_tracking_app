@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Garden_Tracker.PlantDetailPage"
+             BackgroundColor="LightCyan">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Delete" Clicked="Delete_Clicked"/>
+        <ToolbarItem Text="Update" Clicked="Update_Clicked"/>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Type" TextColor="Firebrick" Padding="0,40,0,0" VerticalOptions="Start" HorizontalOptions="Start" FontAttributes="Bold" FontSize="18"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="" x:Name="typeLable" TextColor="Firebrick" VerticalOptions="Start" HorizontalOptions="Start" FontSize="14"/>
+                <Label Text="" x:Name="subTypeLable" TextColor="Firebrick" VerticalOptions="Start" HorizontalOptions="Start" FontSize="14"/>
+            </StackLayout>
+
+            <Label Text="Location" TextColor="Firebrick" VerticalOptions="Start" HorizontalOptions="Start" FontAttributes="Bold" FontSize="18"/>
+            <Label Text="" x:Name="locLable" TextColor="Firebrick" VerticalOptions="Start" HorizontalOptions="Start" FontSize="14"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Column" TextColor="Firebrick" VerticalOptions="Start" HorizontalOptions="Start" FontAttributes="Bold" FontSize="18"/>
+                <Label Text="Row" TextColor="Firebrick" VerticalOptions="Start" HorizontalOptions="Start" Margin="40,0,0,0" FontAttributes="Bold" FontSize="18"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="-1" TextColor="Firebrick" x:Name="pltCol" VerticalOptions="Start" HorizontalOptions="Start" FontSize="14"/>
+                <Label Text="-1" TextColor="Firebrick" x:Name="pltRow" VerticalOptions="Start" Margin="100,0,0,0" HorizontalOptions="Start" FontSize="14"/>
+            </StackLayout>
+            <Image x:Name="imgView" WidthRequest="120" HeightRequest="120" VerticalOptions="Center" HorizontalOptions="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

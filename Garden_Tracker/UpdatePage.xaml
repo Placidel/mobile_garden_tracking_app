@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Garden_Tracker.UpdatePage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Clicked="Save_Clicked"/>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Select Type"/>
+            <Picker x:Name="typePicker" SelectedIndexChanged="PlantTypeSelected"/>
+            <Picker x:Name="subTypePicker" />
+            <Label Text="Select Garden"/>
+            <StackLayout Orientation="Horizontal">
+                <Picker x:Name="gardenPicker" SelectedIndexChanged="GardenSelected" WidthRequest="120"/>
+                <Picker x:Name="colPicker" WidthRequest="40"/>
+                <Picker x:Name="rowPicker" WidthRequest="40"/>
+            </StackLayout>
+
+            <Image x:Name="MainImage" WidthRequest="150" HeightRequest="150"/>
+            <Button Text="Add Photo" Clicked="Photo_Clicked"                 
+                    FontSize="18"
+                BackgroundColor="Gold"
+                CornerRadius="12"
+                FontAttributes="Bold"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

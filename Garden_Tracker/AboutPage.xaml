@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Garden_Tracker.AboutPage">
+    <ContentPage.Content>
+        <StackLayout Padding="0, 40, 0, 40">
+            <Label Text="Garden Tracker"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center"
+                   TextColor="Firebrick"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   />
+            <BoxView BackgroundColor="AliceBlue" Color="Aqua" HorizontalOptions="Center" HeightRequest="4" WidthRequest="160"/>
+            <Label Text="Copyright 2020"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                   TextColor="Firebrick"
+                   FontSize="18"
+                   />
+            <Label Text="Nathan Callahan"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" 
+                   TextColor="Firebrick"
+                   FontSize="18"
+                   />
+            <BoxView BackgroundColor="AliceBlue" Color="Aqua" HorizontalOptions="Center" HeightRequest="4" WidthRequest="160"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

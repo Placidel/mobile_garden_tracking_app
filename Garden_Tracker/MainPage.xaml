@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Garden_Tracker;assembly=Garden_Tracker"
+             mc:Ignorable="d"
+             x:Class="Garden_Tracker.MainPage"
+            
+            BackgroundColor="LightCyan"
+            >
+    <TabbedPage.Title>Garden Tracker</TabbedPage.Title>
+  <!--Pages can be added as references or inline-->
+  <local:TypePage Title="Types" />
+  <local:PlantPage Title="Plants" />
+  <local:GardenDetailPage Title="Gardens" />
+  <local:WeatherPage Title="Weather" />
+  <local:AboutPage Title="About" />
+</TabbedPage>

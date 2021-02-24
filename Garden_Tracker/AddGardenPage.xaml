@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Garden_Tracker.AddGardenPage" BackgroundColor="#214CDA" Padding="20">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="New Garden" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <BoxView HeightRequest="2" Color="Black"/>
+            <Entry Placeholder="Enter Name" x:Name="NameEntry"/>
+            <Label Text="How many columns? (you can change this later)" FontSize="16" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            <Entry Placeholder="100" x:Name="colEntry" HorizontalTextAlignment="Center"/>
+            <Label Text="How many rows? (you can change this later too)" FontSize="16" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            <Entry Placeholder="100" x:Name="rowEntry" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
